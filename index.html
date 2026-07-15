@@ -9,10 +9,40 @@
     <meta name="apple-mobile-web-app-title" content="To Do List" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>To Do List</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class="min-h-screen w-full">
+      <nav class="w-full h-auto">
+        <div class="w-[80%] mx-auto flex items-center justify-between">
+          <div class="flex items-center justify-center gap-2">
+            <img src="./src//assets//logo.png" alt="logo" class="h-12 w-12" />
+            <h1 class="">to do list</h1>
+          </div>
+          <a
+            href="https://hritik-sharma-personal-portfolio.vercel.app/"
+            class=""
+            >see more projects</a
+          >
+        </div>
+      </nav>
+      <div class="">
+        <div class="">
+          <input
+            type="text"
+            id="toDoInput"
+            class=""
+            placeholder="Enter your Task"
+          />
+          <button class="" id="toDoBtn"><i class="fa-solid fa-plus"></i> Add</button>
+        </div>
+        <ul id="toDoList"></ul>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
